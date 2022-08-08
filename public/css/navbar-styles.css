@@ -9,9 +9,9 @@
     background-image: url("../images/hamburgerMenu.png");
 }
 
-.nav-link {
-    /* color: rgb(246, 240, 240); */
-}
+/* .nav-link {
+    color: rgb(246, 240, 240);
+} */
 
 .navbar ul li:hover {
     background-color: transparent !important;
