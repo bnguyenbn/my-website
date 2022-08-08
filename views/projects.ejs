@@ -1,0 +1,113 @@
+<%- include("header") -%>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/navbar-styles.css">
+  <link rel="stylesheet" href="css/projects-styles.css">
+</head>
+
+<body>
+<%- include("navbar") -%>
+
+<section class="projects">
+<div class="row align-items-center text-center">
+
+  <div class="col-lg-6">
+    <main class="form-signin w-100 m-auto">
+      <form class="" action="/weather" method="post">
+        <img class="mb-4" src="../images/openWeather-img.png" alt="" width="100" height="100">
+        <h1 class="h3 mb-3 fw-normal">Weather Mini App</h1>
+        <div class="form-floating">
+          <input type="text" name="cityName" class="form-control" id="floatingInput" placeholder="City">
+          <!--autocomplete="off"-->
+          <label for="floatingInput">City Name</label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+        
+      </form>
+    </main>
+  </div>
+
+  <div class="col-lg-6 todolist">
+    <main class="form-signin m-auto">
+      
+        <img class="mb-4" src="../images/todolist-img.png" alt="" width="90" height="115">
+        <h1 class="h3 mb-3 fw-normal">To-do List Mini App</h1>
+
+        <div class="box">
+          <% listItem.forEach(function(element) { %>
+            <form class="" action="/delete" method="post">
+              <div class="new-item">
+                <!-- Make a post request whenever the checkbox is checked -->
+                <!-- Assigning element's id to checkboxName that is returned to app -->
+                <input class="" type="checkbox" name="checkbox" value="<%= element._id %>" onChange="this.form.submit()">
+                <p><%= element.name %></p>
+              </div>
+              <input type="hidden" name="list" value="">
+            </form>
+          <% }) %>
+        
+        <form action="/add" method="post">
+          <div class="form-floating item">
+            <input name="newItem" type="text" class="form-control form-control-lg" id="listInput" placeholder="Item">
+            <label for="listInput">Item</label>
+          </div>
+        
+          <button class="w-100 btn btn-lg btn-primary" type="submit">Add</button>
+        </form>
+      </div>
+      
+    </main>
+  </div>
+
+</div>
+</section>
+
+
+<!-- Modal -->
+<% if(weather === null && listItem === null) { %>
+  <!-- Redirect to /projects -->
+<% } else if(weather !== null) { %>
+
+  <%- include("modal-header") -%>
+
+  <% if(statusCode !== 200) { %>
+    <h1><%= statusCode %></h1>
+    <h1>Oh!!! Something went wrong. Please go back and try again.</h1>
+  <% } else { %>
+    <div class="row text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal"><%= city %></h4>
+          </div>
+          <div class="card-body">
+            <img src="<%= icon %>" alt="weather-icon">
+            <h1 class="card-title pricing-card-title"><%= description %></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Temperature: <%= temp %></li>
+              <li>Feels Like: <%= tempFeelsLike %></li>
+              <li>Wind Speed: <%= windSpeed %></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<% } %>
+
+<%- include("modal-footer") -%>
+
+<script>
+  $(document).ready(function(){
+      $("#staticBackdrop").modal('show');
+  });
+</script>
+
+<% } %>
+
+<div class="d-grid gap-2 col-2 mx-auto">
+  <a class="btn btn-lg btn-success" href="https://github.com/benng5" target="_blank">
+    More Projects
+  </a>
+</div>
+
+<%- include("footer") -%>

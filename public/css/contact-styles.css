@@ -1,0 +1,79 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/4.jpg);;
+    background-color: rgba(4, 4, 4, 0.66);
+}
+
+.container {
+    padding: 3%;
+}
+
+.container h3, h1 {
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+}
+
+.container h1  {
+    font-size: 3.5rem;
+}
+
+.container h3 {
+    color: #cc005f;
+    text-shadow: 0 0 6px rgba(52, 49, 49, 0.2);
+}
+
+/* Icons Styles */
+
+.contact-icons {
+    font-size: 2rem;
+    padding-right: 10px;
+}
+
+/* Form Styles */
+
+.form-signin {
+    max-width: 350px;
+    padding-top: 40px;
+}
+
+.container h1 {
+    color: white;
+}
+
+.form-floating {
+    padding: 1px;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#contact input, 
+#contact textarea {
+    border-bottom: 2px solid #FF0077;
+}
+
+.submit-btn {
+    padding-top: 2px;
+}
+
+.card-body ul li {
+    font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}

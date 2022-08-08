@@ -1,0 +1,126 @@
+/* Navbar Section */
+
+.navbar {
+    z-index: 1;
+    left: 15px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); */
+    background-image: url("../images/hamburgerMenu.png");
+}
+
+.nav-link {
+    color: rgb(246, 240, 240);
+}
+
+.navbar ul li:hover {
+    background-color: transparent !important;
+}
+
+.navbar ul li a:hover {
+    color: #c93838d7;
+}
+
+.navbar-brand {
+    color: rgb(254, 254, 254);
+    font-family: "Ubuntu";
+    font-size: 20px;
+}
+
+.navbar-brand:hover {
+    color: #c93838d7;
+}
+
+/* Carousel Section */
+
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    z-index: 0;
+}
+
+.btn:hover {
+    border: solid #FF0077;
+}
+
+/* Info Section */
+
+#info-section, #skills {
+    background: #f5eeee;
+}
+
+.container {
+    padding: 3%;
+}
+
+.container h3, h1 {
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+}
+
+.container h1  {
+    font-size: 3.5rem;
+}
+
+.container h3 {
+    color: #cc005f;
+    text-shadow: 0 0 6px rgba(52, 49, 49, 0.2);
+}
+
+.info-content {
+    width: 80%;
+    margin: 40px auto auto;
+    text-align: left;
+}
+
+.info-content p {
+    font-family: "Ibarra Real Nova", serif;
+    font-size: 1.7rem;
+    line-height: 1.3;
+    color: #521f1f;
+    display: inline;
+}
+
+.coding-img {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+/* Skills Section */
+
+#skills h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2.8rem;
+    text-align: center;
+    color: #cc005f;
+    text-shadow: 0 0 6px rgba(52, 49, 49, 0.2);
+}
+
+#skills h2 {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.skills-technical, .skills-personal {
+    font-family: "Merriweather", serif;
+    font-size: 1.3rem;
+}
+
+.col-lg-6 h2 {
+    text-align: center;
+}
+
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+.download-button a {
+    color: #f5eeee !important;
+}
+
+/* Footer Section */
+
+#footer {
+	text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}

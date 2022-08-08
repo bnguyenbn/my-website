@@ -1,0 +1,93 @@
+<%- include("header") -%>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/contact-styles.css">
+  <link rel="stylesheet" href="css/navbar-styles.css">
+</head>
+
+<body>
+<section id="contact">
+<div class="d-flex justify-content-center align-items-center h-100">
+  <div class="container">
+    <div class="text-center intro">
+      <div class="row section-intro">
+        <div class="col-twelve">
+
+          <h3>Contact</h3>
+          <h1>I'd Love To Hear From You.</h1>
+
+          <a class="contact-icons" href="https://www.linkedin.com/in/benng5/" rel="nofollow" target="_blank">
+            <i class="bi bi-linkedin""></i>
+          </a>
+
+          <a class="contact-icons" href="https://github.com/benng5" rel="nofollow" target="_blank">
+            <i class="bi bi-github"></i>
+          </a>
+
+          <a class="contact-icons" href="mailto:nghiaben7@gmail.com" rel="nofollow" target="_blank">
+            <i class="bi bi-envelope-fill"></i>
+          </a>
+
+          <main class="form-signin w-100 m-auto">
+            <form class="" action="/contact" method="post">
+              <div class="form-floating">
+                <input type="text" name="name" class="form-control" placeholder="Name">
+                <label for="floatingInput">Name</label>
+              </div>
+              <div class="form-floating">
+                <input type="email" name="email" class="form-control" placeholder="name@example.com">
+                <label for="floatingInput">Email Address</label>
+              </div>
+              <div class="form-floating">
+                <textarea class="form-control" name="message" style="height: 150px" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Message</label>
+              </div>
+              <div class="submit-btn">
+                <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+              </div>
+            </form>
+          </main>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Modal -->
+<% if(userName === null) { %>
+  <!-- Redirect to /projects -->
+<% } else { %>
+
+  <%- include("modal-header") -%>
+    <div class="row text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Thank You</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">Hello <%= userName %></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Thank you so much <%= userName %> for contacting with me.</li>
+              <li>Your info has been well recorded by my website.</li>
+              <li>I'll be in touch in the soonest time possible.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<%- include("modal-footer") -%>
+
+<script>
+  $(document).ready(function(){
+      $("#staticBackdrop").modal('show');
+  });
+</script>
+
+<% } %>
+  
+
+<%- include("navbar") -%>
+
+<%- include("footer") -%>

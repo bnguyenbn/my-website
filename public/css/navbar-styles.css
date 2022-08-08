@@ -1,0 +1,32 @@
+/* Navbar Section */
+
+.navbar {
+    z-index: 1;
+    left: 15px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("../images/hamburgerMenu.png");
+}
+
+.nav-link {
+    /* color: rgb(246, 240, 240); */
+}
+
+.navbar ul li:hover {
+    background-color: transparent !important;
+}
+
+.navbar ul li a:hover {
+    color: #c93838d7;
+}
+
+.navbar-brand {
+    color: rgb(254, 254, 254);
+    font-family: "Ubuntu";
+    font-size: 20px;
+}
+
+.navbar-brand:hover {
+    color: #c93838d7;
+}

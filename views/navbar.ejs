@@ -1,0 +1,70 @@
+<script>
+    $(document).ready(function () {
+
+      // Navbar collapse on scroll below 100px
+      changeNavbar();
+
+      $(window).scroll(function () {
+        changeNavbar();
+      });
+
+      function changeNavbar() {
+        let navbar = $("#navBarSection");
+        if ($(this).scrollTop() >= 612) {
+          navbar.removeClass("navbar-expand-lg");
+          $("a").css("color", "black");
+          $("a").mouseover(function () {$(this).css("color", "#c93838d7")});
+          $("a").mouseout(function () {$(this).css("color", "black")});
+        }
+        else if ($(this).scrollTop() < 612) {
+          navbar.addClass("navbar-expand-lg");
+          $("a").css("color", "rgb(246, 240, 240)");
+          $("a").mouseover(function () {$(this).css("color", "#c93838d7")});
+          $("a").mouseout(function () {$(this).css("color", "rgb(246, 240, 240)")});
+        }
+      }
+    });
+</script>
+
+<!-- Navbar Section -->
+
+<nav id="navBarSection" class="navbar fixed-top navbar-expand-lg navbar-light>
+  <div class="container-fluid">
+      <button class="navbar-toggler custom-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <a class="navbar-brand" href="/">Ben's</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 20px;">
+          <li class="nav-item active">
+              <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/projects">Projects</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact Me</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav">
+          
+          <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/benng5/" rel="nofollow" target="_blank">
+                <i class="bi bi-linkedin"></i>
+              </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/benng5" rel="nofollow" target="_blank">
+                <i class="bi bi-github"></i>
+            </a>
+        </li>
+          <li class="nav-item">
+              <a class="nav-link" href="mailto:nghiaben7@gmail.com" rel="nofollow" target="_blank">
+                  <i class="bi bi-envelope-fill"></i>
+              </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
