@@ -16,7 +16,7 @@
 - [Bootstrap] - great UI boilerplate for modern web apps.
 - [ejs] - Embedded JavaScript templating.
 - [mongoDB] - NoSQL Database.
-- [mongoose] - An ODM library for MongoDB & Node.js.
+- [mongoose] - An Object Data Modeling (ODM) library for MongoDB & Node.js.
 - [Weather API] - An API for weather.
 - [Google API] - API for Google Services.
 
