@@ -22,6 +22,10 @@
 
 ## Installation
 
+1. Easy way: click here -> https://benng.herokuapp.com/
+
+2. Nearly Easy way:
+
 my-website requires [Node.js] to run.
 
 Install the dependencies and start the server.
