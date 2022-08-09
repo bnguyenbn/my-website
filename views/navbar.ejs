@@ -10,13 +10,13 @@
 
       function changeNavbar() {
         let navbar = $("#navBarSection");
-        if ($(this).scrollTop() >= 612) {
+        if ($(this).scrollTop() >= 320) {
           navbar.removeClass("navbar-expand-lg");
           $("a").css("color", "black");
           $("a").mouseover(function () {$(this).css("color", "#c93838d7")});
           $("a").mouseout(function () {$(this).css("color", "black")});
         }
-        else if ($(this).scrollTop() < 612) {
+        else if ($(this).scrollTop() < 320) {
           navbar.addClass("navbar-expand-lg");
           $("a").css("color", "rgb(246, 240, 240)");
           $("a").mouseover(function () {$(this).css("color", "#c93838d7")});
