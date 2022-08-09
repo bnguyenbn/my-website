@@ -18,10 +18,11 @@
 - [mongoDB] - NoSQL Database.
 - [mongoose] - An ODM library for MongoDB & Node.js.
 - [Weather API] - An API for weather.
+- [Google API] - API for Google Services.
 
 ## Installation
 
-my-website requires [node.js] to run.
+my-website requires [Node.js] to run.
 
 Install the dependencies and start the server.
 
@@ -43,3 +44,4 @@ node app.js
 [mongoDB]:<https://www.mongodb.com/>
 [mongoose]:<https://mongoosejs.com/docs/>
 [Weather API]:<https://openweathermap.org/api>
+[Google API]:<https://cloud.google.com/apis/docs/overview>
