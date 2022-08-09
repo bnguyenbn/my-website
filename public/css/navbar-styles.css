@@ -9,10 +9,6 @@
     background-image: url("../images/hamburgerMenu.png");
 }
 
-/* .nav-link {
-    color: rgb(246, 240, 240);
-} */
-
 .navbar ul li:hover {
     background-color: transparent !important;
 }
@@ -29,4 +25,8 @@
 
 .navbar-brand:hover {
     color: #c93838d7;
+}
+
+.icons {
+    font-size: 1.2rem;
 }

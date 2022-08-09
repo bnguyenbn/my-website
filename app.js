@@ -118,8 +118,9 @@ app.post("/weather", (req, res) => {
     const cityName = req.body.cityName;
     const apiURL = "https://api.openweathermap.org/data/2.5/weather?q=";
     const apiID = "&appid=2d622426a5aac4e589b872adfa100b2d";
+    const units = "&units=imperial";
     //Concatenating city name & apiKey to url
-    const url = apiURL + cityName + apiID;
+    const url = apiURL + cityName + apiID + units;
 
     //Making an https GET request (API call) to openWeather
     https.get(url, (response) => {

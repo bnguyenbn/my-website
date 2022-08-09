@@ -77,15 +77,15 @@
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm border-primary">
           <div class="card-header py-3 text-bg-primary border-primary">
-            <h4 class="my-0 fw-normal"><%= city %></h4>
+            <h2 class="my-0 fw-normal"><%= city %></h2>
           </div>
           <div class="card-body">
             <img src="<%= icon %>" alt="weather-icon">
             <h1 class="card-title pricing-card-title"><%= description %></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>Temperature: <%= temp %></li>
-              <li>Feels Like: <%= tempFeelsLike %></li>
-              <li>Wind Speed: <%= windSpeed %></li>
+              <li><h3>Temperature: <%= temp %>°F</h3></li>
+              <li><h3>Feels Like: <%= tempFeelsLike %>°F</h3></li>
+              <li><h3>Wind Speed: <%= windSpeed %>mph</h3></li>
             </ul>
           </div>
         </div>
@@ -105,7 +105,7 @@
 <% } %>
 
 <div class="text-center">
-  <a class="btn btn-lg btn-success w-50" href="https://github.com/benng5" target="_blank">
+  <a class="btn btn-lg btn-success" href="https://github.com/benng5" target="_blank">
     More Projects
   </a>
 </div>
