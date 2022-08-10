@@ -26,13 +26,14 @@
 
 2. Nearly Easy way:
 
-my-website requires [Node.js] to run.
+my-website requires [Node.js] and [mongoDB] to run.
 
-Install the dependencies and start the server.
+Install the dependencies and start mongoDB and node.js servers.
 
 ```sh
 cd my-website
 npm i
+mongod
 node app.js
 ```
 
