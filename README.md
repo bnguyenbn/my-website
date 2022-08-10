@@ -1,7 +1,7 @@
 
 # my-website
 ## Description
-### A Full-Stack web application project, in which I introduce myself as well as two mini applications, where users can check for weather and make to-do list.
+### A Full-Stack web application project, in which I introduce myself as well as three applications, where users can check for weather and make to-do list.
 ## Features
 
 - Information about myself.
