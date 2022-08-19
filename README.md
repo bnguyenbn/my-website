@@ -17,7 +17,7 @@
 - [ejs] - Embedded JavaScript templating.
 - [mongoDB] - NoSQL Database.
 - [mongoose] - An Object Data Modeling (ODM) library for MongoDB & Node.js.
-- [Weather API] - An API for weather.
+- [OpenWeather API] - An API for weather.
 - [Google API] - API for Google Services.
 
 ## Installation
@@ -48,5 +48,5 @@ node app.js
 [jQuery]: <http://jquery.com>
 [mongoDB]:<https://www.mongodb.com/>
 [mongoose]:<https://mongoosejs.com/docs/>
-[Weather API]:<https://openweathermap.org/api>
+[OpenWeather API]:<https://openweathermap.org/api>
 [Google API]:<https://cloud.google.com/apis/docs/overview>
