@@ -10,7 +10,7 @@
 - Adding, deleting an item from a to-do list.
 
 ## Tech
-- [JavaScript], [jQuery], [HTML], [CSS]: duh.
+- [JavaScript], [jQuery], [HTML], [CSS]
 - [Node.js] - back-end JavaScript runtime environment.
 - [Express] - fast node.js network app framework .
 - [Bootstrap] - great UI boilerplate for modern web apps.
